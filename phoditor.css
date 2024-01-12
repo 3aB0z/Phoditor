@@ -140,7 +140,7 @@ header {
 }
 .sign-up {
     background-color: rgb(83, 0, 185);
-    color: rgba(30, 30, 30, 0.889);
+    color: white;
     font-size: 20px;
     font-weight: bolder;
     border-style: solid;
@@ -148,10 +148,10 @@ header {
     border-radius: 10px;
 }
 .sign-up:hover {
-    background: none;
-    color: rgb(83, 0, 185);
+    background-color: rgb(63, 0, 140);
+    border-color: rgb(63, 0, 140);
 }
-.sign-in {
+.login {
     background: none;
     color: rgb(83, 0, 185);
     font-size: 20px;
@@ -161,16 +161,19 @@ header {
     border-radius: 10px;
     border-width: 2px;
 }
-.sign-in:hover {
+.login:hover {
     background-color: rgb(83, 0, 185);
-    color: rgba(30, 30, 30, 0.889);
+    color: white;
 }
 .profile {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     padding: 0px;
     border-width: 0px;
     border-radius: 50%;
+}
+.profile:hover {
+    background-color: rgb(236, 236, 236);
 }
 .profile img {
     width: 50px;
@@ -199,4 +202,87 @@ header {
 .preview-small-text {
     color: rgb(19, 19, 19);
     font-size: 40px;
+}
+
+
+
+.sides {
+    background-color: rgb(83, 0, 185);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.left-side {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.middle-side {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 34%;
+}
+.right-side {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 34%;
+}
+.stay-connected {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    width: 284px;
+}
+.stay-connected-word {
+    color: rgb(40, 40, 40);
+    font-size: 30px;
+    font-weight: bolder;
+}
+.stay-connected-flex {
+    display: flex;
+    align-items: center;
+}
+.stay-connected-text {
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.copyright {
+    text-align: center;
+    font-size: 18px;
+    background-color: #dadada;
+}
+.arrow-up-btn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: #310056;
+    border-radius: 20px;
+    border-style: none;
+    padding: 0px;
+}
+.arrow-up-btn:hover {
+    animation-name: arrow-up-btn-animation;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes arrow-up-btn-animation {
+    from{box-shadow: 0px 0px 3px black;}
+    to{box-shadow: 0px 0px 15px black;}
+}
+.arrow-up-btn img {
+    width: 60px;
+    padding: 0px;
 }
