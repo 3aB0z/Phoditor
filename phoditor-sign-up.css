@@ -1,0 +1,136 @@
+* {
+    text-decoration: none;
+    border-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.phoditor-logo {
+    color: rgb(83, 0, 185);
+    font-size: 45px;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: url(Phoditor-images/bg\ image.jpg);
+}
+
+.apptions-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 240px;
+    z-index: 3;
+}
+
+.bg {
+    position: absolute;
+    align-self: center;
+    margin-top: 90px;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.sing-part {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 400px;
+    height: 550px;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.834);
+    border-radius: 20px;
+    z-index: 3;
+}
+
+.apptions-text {
+    margin-left: 0px;
+    margin-top: 0px;
+    align-self: center;
+    color: rgb(83, 0, 185);
+    font-size: 50px;
+    font-weight: bolder;
+    padding-bottom: 5px;
+}
+
+.flex-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 49%;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.input {
+    width: 50%;
+    height: 33px;
+    font-size: 20px;
+    background-color: rgb(248, 248, 248);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(67, 0, 148);
+}
+
+.flex-terms {
+    align-self: center;
+    width: 54.5%;
+}
+
+.flex-terms input {
+    accent-color: rgb(83, 0, 185);
+}
+
+.terms {
+    color: rgb(83, 0, 185);
+    cursor: pointer;
+}
+
+.terms:hover {
+    color: rgb(52, 0, 117);
+}
+
+.submit-flex {
+    align-self: center;
+    width: 50%;
+    height: 38px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: rgb(83, 0, 185);
+    border-color: rgb(83, 0, 185);
+    border-radius: 2px;
+}
+
+.submit-btn:hover {
+    background-color: rgb(67, 0, 148);
+}
+
+.sm-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
