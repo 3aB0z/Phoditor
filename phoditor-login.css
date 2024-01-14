@@ -15,7 +15,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(Phoditor-images/bg\ image.jpg);
+    background-image: url(Phoditor-images/bg-image.jpg);
 }
 
 .apptions-logo {
