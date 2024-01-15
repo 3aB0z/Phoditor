@@ -299,6 +299,12 @@ header {
     z-index: 3;
 }
 
+.spot-img {
+    width: 140px;
+    margin-left: 13px;
+    margin-bottom: -60px;
+}
+
 .file-format {
     display: flex;
     justify-content: space-evenly;
@@ -495,6 +501,12 @@ header {
     bottom: 50px;
 }
 
+.spot-1-img {
+    width: 150px;
+    float: right;
+    margin-bottom: -100px;
+}
+
 .download-app {
     display: flex;
     justify-content: center;
@@ -570,6 +582,16 @@ header {
 .download-app p {
     margin-bottom: 0px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
