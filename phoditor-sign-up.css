@@ -5,36 +5,17 @@
     padding: 0px;
 }
 
-.phoditor-logo {
-    color: rgb(83, 0, 185);
-    font-size: 45px;
-    font-weight: bolder;
-    margin-left: 15px;
-}
-
 body {
     display: flex;
     flex-direction: column;
     background-image: url(Phoditor-images/bg-image.jpg);
 }
 
-.apptions-logo {
+.phoditor-logo {
     margin-top: 10px;
     margin-left: 10px;
     width: 240px;
     z-index: 3;
-}
-
-.bg {
-    position: absolute;
-    align-self: center;
-    margin-top: 90px;
-    width: 400px;
-    height: 500px;
-    background-color: white;
-    border-radius: 20px;
-    z-index: 2;
-    opacity: 0.8;
 }
 
 .sing-part {
@@ -46,12 +27,12 @@ body {
     width: 400px;
     height: 550px;
     align-self: center;
-    background-color: rgba(255, 255, 255, 0.834);
+    background-color: rgba(255, 255, 255, 0.708);
     border-radius: 20px;
     z-index: 3;
 }
 
-.apptions-text {
+.phoditor-text {
     margin-left: 0px;
     margin-top: 0px;
     align-self: center;
