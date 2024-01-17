@@ -20,7 +20,7 @@ header {
 }
 
 .phoditor-logo {
-    width: 16%;
+    width: 200px;
     text-decoration: none;
 }
 
@@ -581,7 +581,7 @@ header {
     margin-bottom: 50px;
 }
 
-.download-app a {
+.download-app-a {
     display: flex;
     justify-content: center;
     background-color: rgb(83, 0, 185);
@@ -594,7 +594,7 @@ header {
     border-radius: 50px;
 }
 
-.download-app a:hover {
+.download-app-a:hover {
     background-color: rgb(63, 0, 140);
 }
 
@@ -624,7 +624,7 @@ header {
     text-align: center;
 }
 
-.download-app span {
+.download-app label p span a {
     color: rgb(83, 0, 185);
     text-decoration: underline;
     cursor: pointer;
