@@ -8,7 +8,9 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(Phoditor-images/bg-image.jpg);
+    background: linear-gradient(to top right, #ffccff 0%, #ccccff 100%);
+    width: 100%;
+    height: 100vh;
 }
 
 .phoditor-logo {
@@ -23,10 +25,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 40px;
-    width: 400px;
-    height: 550px;
     align-self: center;
+    margin-top: 50px;
+    width: 400px;
+    height: 520px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     z-index: 3;
@@ -52,7 +54,7 @@ body {
     display: flex;
     text-align: center;
     align-items: center;
-    width: 49%;
+    width: 59%;
     margin-bottom: 3px;
     font-size: 20px;
     font-weight: bold;
@@ -60,7 +62,7 @@ body {
 }
 
 .input {
-    width: 50%;
+    width: 60%;
     height: 33px;
     font-size: 20px;
     background-color: rgb(248, 248, 248);
@@ -70,27 +72,17 @@ body {
     border-color: rgb(67, 0, 148);
 }
 
-.flex-terms {
-    align-self: center;
-    width: 54.5%;
-}
-
-.flex-terms input {
-    accent-color: rgb(83, 0, 185);
-}
-
-.terms {
+.flex-name a {
     color: rgb(83, 0, 185);
-    cursor: pointer;
-}
-
-.terms:hover {
-    color: rgb(52, 0, 117);
+    text-decoration: none;
+    text-align: end;
+    width: 59%;
+    margin-top: 5px;
 }
 
 .submit-flex {
     align-self: center;
-    width: 50%;
+    width: 60%;
     height: 38px;
 }
 
@@ -114,4 +106,13 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.sing-part p {
+    color: rgb(53, 53, 53);
+    text-align: center;
+}
+
+.sing-part p a {
+    color: rgb(83, 0, 185);
 }
