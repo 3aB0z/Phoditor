@@ -3,81 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../GitHub/Phoditor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="editor.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
     <title>Phoditor Editor</title>
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
 </head>
 <body>
-
     <header>
-        <div title="Home">
-            <a href="phoditor.html"><img src="images/home.png" alt="home"></a>
+        <div class="edit-tools">
+            <div title="Home">
+                <a href="phoditor.html"><i class="fa-solid fa-house fa-2xl" style="color: #ffffff;"></i></a>
+            </div>
+            <div title="Palette">
+                <button><i class="fa-solid fa-palette fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Shapes">
+                <button><i class="fa-solid fa-shapes fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Text">
+                <button><i class="fa-solid fa-text fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Write">
+                <button><i class="fa-solid fa-pencil fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Brush">
+                <button><i class="fa-solid fa-paintbrush fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Fill">
+                <button><i class="fa-solid fa-fill-drip fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Erase">
+                <button><i class="fa-solid fa-eraser fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Pick Colors">
+                <button><i class="fa-solid fa-eye-dropper fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Add Effects">
+                <button><i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Crop">
+                <button><i class="fa-solid fa-crop-simple fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Cute">
+                <button><i class="fa-solid fa-scissors fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Copy">
+                <button><i class="fa-solid fa-copy fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Change Image Format">
+                <button><i class="fa-solid fa-shuffle fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Undo">
+                <button><i class="fa-solid fa-reply fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
+            <div title="Redo">
+                <button><i class="fa-solid fa-share fa-2xl" style="color: #ffffff;"></i></button>
+            </div>
         </div>
-        <div title="Palette">
-            <button><img src="images/palette.png" alt="palette"></button>
-        </div>
-        <div title="Shapes">
-            <button><img src="images/resources.png" alt="shapes"></button>
-        </div>
-        <div title="Text">
-            <button><img src="images/text.png" alt="text"></button>
-        </div>
-        <div title="Write">
-            <button><img src="images/pencil.png" alt="write"></button>
-        </div>
-        <div title="Brush">
-            <button><img src="images/brush.png" alt="brush"></button>
-        </div>
-        <div title="Fill">
-            <button><img src="images/fill.png" alt="fill"></button>
-        </div>
-        <div title="Erase">
-            <button><img src="images/erase.png" alt="erase"></button>
-        </div>
-        <div title="Pick Colors">
-            <button><img src="images/color-picker.png" alt="color-picker"></button>
-        </div>
-        <div title="Add Effects">
-            <button><img src="images/add-effects.png" alt="add-effects"></button>
-        </div>
-        <div title="Crop">
-            <button><img src="images/crop.png" alt="crop"></button>
-        </div>
-        <div title="Cute">
-            <button><img src="images/cute.png" alt="cute"></button>
-        </div>
-        <div title="Copy">
-            <button><img src="images/copy.png" alt="copy"></button>
-        </div>
-        <div title="Change Image Format">
-            <button><img src="images/change-formats.png" alt="change-formats"></button>
-        </div>
-        <div title="Undo">
-            <button><img src="images/undo.png" alt="undo"></button>
-        </div>
-        <div title="Redo">
-            <button><img src="images/redo.png" alt="redo"></button>
-        </div>
-        <div title="Apply Changes">
-            <button><img src="images/apply.png" alt="apply"></button>
-        </div>
-        <div title="Cancel Changes">
-            <button><img src="images/cancel.png" alt="cancel"></button>
-        </div>
-        <div title="Add Image">
-            <button><img src="images/add-image.png" alt="add-image"></button>
-        </div>
-        <div title="Save Image">
-            <button><img src="images/save.png" alt="save"></button>
-        </div>
-        <div title="Delete Image">
-            <button><img src="images/delete.png" alt="delete"></button>
-        </div>
+        <button class="download-btn">
+            <i class="fa-solid fa-download fa-lg" style="color: #ffffff;"></i>
+            <h5>Download</h5>
+        </button>
     </header>
     <div class="image-container">
         <img src="images/Infernal swain 3840x2160.jpg" alt="user-image">
     </div>
-
 
 
 

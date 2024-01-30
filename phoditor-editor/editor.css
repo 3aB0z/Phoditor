@@ -4,17 +4,29 @@
     text-decoration: none;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
 header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background: linear-gradient(to left, #9900cc 7%, #3399ff 100%);
+}
+
+.edit-tools {
     display: flex;
     justify-content: start;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: 50px;
-    background-color: rgb(30, 30, 30);
 }
 
-header div {
+.edit-tools div {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -23,12 +35,12 @@ header div {
     height: 50px;
 }
 
-header div:hover {
-    background-color: rgb(19, 19, 19);
+.edit-tools div:hover {
+    background-color: rgba(255, 255, 255, 0.111);
     cursor: pointer;
 }
 
-header div button {
+.edit-tools div button {
     background: none;
     border-style: none;
     cursor: pointer;
@@ -36,19 +48,82 @@ header div button {
     height: 32px;
 }
 
-header div button img {
+.edit-tools div button img {
     width: 32px;
     height: 32px;
 }
 
-.body {
+.image-tools {
     display: flex;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 50px;
+}
+
+.image-tools div {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    min-width: 100%;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+
+.image-tools div:hover {
+    background-color: rgba(255, 255, 255, 0.138);
+    cursor: pointer;
+}
+
+.image-tools div button {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+.image-tools div button img {
+    width: 32px;
+    height: 32px;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.182);
+    border-style: none;
+    width: auto;
+    height: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 7px;
+    padding-left: 7px;
+    border-radius: 4px;
+}
+
+.download-btn:hover {
+    background-color: rgba(255, 255, 255, 0.264);
+    cursor: pointer;
+}
+
+.download-btn img {
+    width: 25px;
+    height: 25px;
+}
+
+.download-btn h5 {
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 5px;
 }
 
 .image-container {
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,6 +137,6 @@ header div button img {
     width: fit-content;
     max-width: 100%;
     height: auto;
-    max-height: calc(100vh - 50px);
+    max-height: calc(100vh - 80px);
     align-self: center;
 }

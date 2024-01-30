@@ -1,5 +1,9 @@
-//let clickk = document.getElementById("bttn");
-//clickk.addEventListener("dblclick", function() {alert("gg man")});
+function showCookies() {
+    document.getElementById('cookies').style.display = 'block';
+}
 
+function cancelCookies() {
+    document.getElementById('cookies').style.display = 'none';
+}
 
 
