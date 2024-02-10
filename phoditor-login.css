@@ -14,10 +14,25 @@ body {
 }
 
 .phoditor-logo {
+    display: block;
     margin-top: 10px;
     margin-left: 10px;
     width: 240px;
     z-index: 3;
+}
+
+.phoditor-logo img {
+    width: 100%;
+}
+
+.phoditor-logo img:first-child {
+    width: 100%;
+}
+
+.phoditor-logo img:last-child {
+    display: none;
+    width: 70px;
+    height: 70px;
 }
 
 .sing-part {
@@ -109,10 +124,45 @@ body {
 }
 
 .sing-part p {
-    color: rgb(53, 53, 53);
+    color: rgb(67, 67, 67);
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .sing-part p a {
     color: rgb(83, 0, 185);
+}
+
+@media (max-width: 950px) {
+    .phoditor-logo img:first-child {
+        display: none;
+    }
+
+    .phoditor-logo img:last-child {
+        display: block;
+    }
+}
+
+@media (max-width: 600px) {
+    .sing-part {
+        background-color: #00000000;
+        margin-top: 40px;
+    }
+    
+    .phoditor-logo img:last-child {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    .phoditor-logo img:last-child {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sing-part {
+        width: 100%;
+        margin-top: 30px;
+    }
 }

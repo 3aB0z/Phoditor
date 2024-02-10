@@ -9,7 +9,6 @@
     <link rel="icon" href="Phoditor-images/P-logo.png">
     <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
     <title>Phoditor</title>
-    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
@@ -19,16 +18,47 @@
 
 <body>
     <header>
-        <a href="phoditor.html" class="phoditor-logo"><img src="Phoditor-images/full-fit-phoditor-logo-no-bg.png" alt="phoditor-logo"></a>
+        <div class="menu-logo">
+            <a href="phoditor.html" class="p-logo"><img src="Phoditor-images/P-logo.png" alt="P-logo"></a>
+            <a href="phoditor.html" class="phoditor-logo"><img src="Phoditor-images/full-fit-phoditor-logo-no-bg.png" alt="phoditor-logo"></a>
+        </div>
         <div class="middle-items">
+            <div class="menu">
+                <button class="menu-btn" id="menuBtn" onclick="showHideProducts(menuDiv,menuBtn,menuCaretDown)">
+                    <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px; margin-top: 0px;" id="menuCaretDown"></i>
+                    <p class="products">Menu</p>
+                </button>
+                <div class="menu-content" id="menuDiv">
+                    <div class="menu-content-flex">
+                        <button class="menu-content-button" onclick="showHideMenuProducts(menuProducts,menuProductsBtn,menuProductsCaretDown)" id="menuProductsBtn">
+                            <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px;" id="menuProductsCaretDown"></i>
+                            <p class="menu-products">Products</p>
+                        </button>
+                        <div class="menu-dropdown-content" id="menuProducts">
+                            <a href="#" class="menu-vimg-logo menu-image-logo">
+                                <img src="Phoditor-images/image-logo.webp" alt="image-logo">
+                                <div>Phoditor<p>Edit images, boost there quality & enchant them with effects for free</p></div>
+                            </a>
+                            <a href="" class="menu-vimg-logo menu-video-logo">
+                                <img src="Phoditor-images/video-logo.png" alt="video-logo">
+                                <div>Viditor<p>Edit videos with diffirent tools & enchant them with some effects for free</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-about">About</div>
+                    <div class="menu-contact">Contact</div>
+                    <div class="menu-support">Support</div>
+                </div>
+            </div>
             <div class="dropdown">
-                <button class="products-btn">
-                    <i class="fa-solid fa-caret-down" style="color: #000000;"></i>
+                <button class="products-btn" onclick="showHideProducts(products,productsBtn,caretDown)" id="productsBtn">
+                    <i class="fa-solid fa-caret-down" style="color: #000000;" id="caretDown"></i>
                     <p class="products">Products</p>
                 </button>
-                <div class="dropdown-content">
+                <div class="dropdown-content" id="products">
                     <div class="dropdown-flex">
-                        <a href="phoditor.html" class="vimg-logo image-logo">
+                        <a href="#" class="vimg-logo image-logo">
                             <img src="Phoditor-images/image-logo.webp" alt="image-logo">
                             <div>Phoditor<p>Edit images, boost there quality & enchant them with effects for free</p></div>
                         </a>
@@ -49,10 +79,45 @@
                 <a href="phoditor-sign-up.html"><button class="sign-up">Sign Up</button></a>
                 <a href="phoditor-login.html"><button class="login">Login</button></a>
             </div>
-            <button class="profile"><i class="fa-solid fa-circle-user" style="color: #1f2641; font-size: 43px;"></i></button>
+            <div>
+                <button class="profile" title="Profile" onclick="showHideElement(profile,profileBtn)" id="profileBtn">
+                    <i class="fa-solid fa-circle-user" style="color: #1a003a; font-size: 45px;"></i>
+                </button>
+                <div class="profile-content" id="profile">
+                    <div class="user-items">
+                        <div class="user">
+                            <label for="upload" onclick="profileImgUpload()" onmouseenter="showProfileImageChange()" onmouseleave="hideProfileImageChange()" id="change-profile-img">
+                                <i class="fa-solid fa-pen-to-square fa-2xl" style="color: #ffffff;" id="change-profile-img-image"></i>
+                            </label>
+                            <input type="file">
+                            <img src="Phoditor-images/profile-img.jpg" alt="profile-image" id="profile-img">
+                        </div>
+                        <div class="user-text">
+                            <p>User</p>
+                            <p>user@gmail.com</p>
+                        </div>
+                    </div>
+                    <button class="manage-account">
+                        <i class="fa-solid fa-user-pen" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>Manage Account</p>
+                    </button>
+                    <button class="history">
+                        <i class="fa-solid fa-clock-rotate-left" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>History</p>
+                    </button>
+                    <button class="settings">
+                        <i class="fa-solid fa-gear" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>Settings</p>
+                    </button>
+                    <button class="sign-out">
+                        <i class="fa-solid fa-right-from-bracket" style="color: #ff0000; font-size: 25px; margin-top: 3px;"></i>
+                        <p>Sign out</p>
+                    </button>
+                </div>
+            </div>
         </div>
-    </header><br><br><br>
-    <img class="phoditor-img" src="Phoditor-images/full-fit-phoditor-logo-no-bg.png" alt="phoditor-logo"><br><br><br>
+    </header>
+    <img class="phoditor-img" src="Phoditor-images/full-fit-phoditor-logo-no-bg.png" alt="phoditor-logo">
 
     <h1 class="titles">Phoditor Terms of Use</h1>
 
@@ -84,6 +149,26 @@
     
     <div class="copyright">© 2023-2024 Phoditor Morocco. All rights reserved.</div>
 
+    <a href="#">
+        <button class="arrow-up-btn" type="button">
+            <i class="fa-solid fa-arrow-up fa-2xl" style="color: #ffffff;"></i>
+        </button>
+    </a>
+
+    <div class="cookies">
+        <button class="cookies-btn" title="cookies" type="submit" id="cookiesBtn" onclick="showHideCookies(cookies)">
+            <i class="fa-solid fa-cookie-bite fa-2xl" style="color: #005eff;"></i>
+        </button>
+        <div class="cookies-text" id="cookies">
+            <p>We use essential cookies to make our site work & improve user experience and analyze website traffic. By clicking “Accept” you agree to our website's cookie use as described in our Cookie Policy.</p>
+            <div>
+                <button type="button">Manage Preferences</button>
+                <button type="submit" onclick="showHideCookies(cookies)">Reject All</button>
+                <button type="submit" onclick="showHideCookies(cookies)">Accept All Cookies</button>
+            </div>
+        </div>
+    </div>
+    
     <script src="about.js"></script>
 </body>
 </html>

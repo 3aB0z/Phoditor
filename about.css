@@ -19,18 +19,236 @@ header {
     width: 100%;
     height: 60px;
     background-color: white;
-    box-shadow: 0px 0px 5px rgb(206, 206, 206);
     z-index: 100;
+    box-shadow: 0px 0px 5px rgb(206, 206, 206);
+}
+
+.menu-logo {
+    display: flex;
+    justify-items: center;
+}
+
+.menu {
+    position: relative;
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 55px;
+    margin-bottom: 0px;
+    color: black;
+    font-size: 22px;
+    align-self: center;
+}
+
+.menu-btn:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.menu:hover .menu-btn {
+    background-color: rgb(206, 206, 206);
+}
+
+.menu:hover .menu-content {
+    display: inline-block;
+}
+
+.menu-btn i {
+    margin-top: 15px;
+}
+
+.menu-content {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    min-width: 150px;
+    min-height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 7px 0px rgb(142, 142, 142);
+}
+
+.menu-content-flex {
+    position: relative;
+    width: 100%;
+}
+
+.menu-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-about:hover {
+    background-color: #dadada;
+}
+
+.menu-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-contact:hover {
+    background-color: #dadada;
+}
+
+.menu-support {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-support:hover {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #dadada;
+}
+
+.menu-content-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+}
+
+.menu-content-button:hover {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #dadada;
+}
+
+.menu-content-button:focus {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #dadada;
+}
+
+.menu-content-flex:hover .menu-dropdown-content {
+    display: block;
+}
+
+.menu-products {
+    width: auto;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+
+.menu-dropdown-content {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 0px 5px 0px rgb(142, 142, 142);
+    background-color: white;
+    width: 300px;
+    left: -63px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+.menu-dropdown-flex {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 240px;
+}
+
+.menu-vimg-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background: none;
+    margin: 0px;
+    text-decoration: none;
+    border-style: none;
+}
+
+.menu-vimg-logo:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.menu-image-logo:hover {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.menu-video-logo:hover {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu-vimg-logo img {
+    width: 120px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.menu-vimg-logo div {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-right: 30px;
+}
+
+.menu-vimg-logo div p {
+    color: rgb(104, 104, 104);
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.p-logo {
+    display: none;
+    justify-content: center;
+    align-self: center;
+    min-width: 49px;
+    height: 49px;
+    margin-left: 6px;
+    text-decoration: none;
+}
+
+.p-logo img {
+    width: 100%;
 }
 
 .phoditor-logo {
-    width: 200px;
+    display: flex;
+    justify-content: center;
+    min-width: 210px;
+    height: 49px;
+    margin-left: 6px;
     text-decoration: none;
 }
 
 .phoditor-logo img {
     width: 100%;
-    margin-left: 7px;
+    min-height: 46px;
 }
 
 .middle-items {
@@ -38,7 +256,11 @@ header {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    width: 40%;
+    width: 450px;
+}
+
+.middle-items a {
+    text-decoration: none;
 }
 
 .dropdown {
@@ -54,27 +276,28 @@ header {
     height: 60px;
 }
 
-.products-btn:hover {
+.dropdown:hover .products-btn {
     background-color: rgb(206, 206, 206);
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline-block;
 }
 
 .dropdown-content {
     position: absolute;
     display: none;
-    left: -200px;
+    left: -250px;
     border-radius: 20px;
     box-shadow: 0px 0px 5px 0px rgb(142, 142, 142);
     background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 .dropdown-flex {
     display: flex;
     flex-direction: row;
     width: 900px;
+    height: 240px;
 }
 
 .vimg-logo {
@@ -177,8 +400,9 @@ header {
 
 .sign {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    min-width: 169px;
 }
 
 .sign-up {
@@ -201,7 +425,6 @@ header {
     background: none;
     color: rgb(83, 0, 185);
     font-size: 20px;
-    margin-left: 10px;
     font-weight: bolder;
     border-style: solid;
     border-color: rgb(83, 0, 185);
@@ -216,29 +439,208 @@ header {
 }
 
 .profile {
-    min-width: 50px;
-    min-height: 50px;
-    margin-left: 30px;
-    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 45px;
+    min-height: 45px;
+    margin-left: 20px;
+    margin-right: 15px;
     padding: 0px;
-    border-width: 0px;
+    border-style: none;
     border-radius: 50%;
 }
 
-.profile:hover {
+.profile-flex div:nth-of-type(2):hover .profile {
     background-color: rgb(236, 236, 236);
 }
 
-.profile img {
-    width: 50px;
-    align-self: center;
-    background: none;
+.profile-flex div:nth-of-type(2):hover .profile-content {
+    display: inline-block;
+}
+
+.profile-content {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 250px;
+    right: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: white;
+    box-shadow: 0px 0px 10px -4px rgb(34, 34, 34);
+}
+
+.user-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px rgb(223, 223, 223) solid;
+}
+
+.user img {
+    width: 64px;
+    height: 64px;
+    border-style: none;
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 1;
+}
+
+.user label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.482);
+    z-index: 2;
+    opacity: 0;
+}
+
+.user label i {
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+}
+
+.user label:hover , .user label i {
+    opacity: 1;
+}
+
+.user input {
+    display: none;
+}
+
+.user img:hover {
+    opacity: 0.5;
+}
+
+.user-text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
+
+.user-text p:nth-of-type(1) {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Inter;
+    margin-bottom: 0px;
+}
+
+.user-text p:nth-of-type(2) {
+    font-size: 14px;
+    font-family: Inter;
+    color: rgb(131, 131, 131);
+    margin-bottom: 0px;
+}
+
+.settings {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.settings:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.settings p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-left: 7px;
+}
+
+.history {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.history:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.history p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-left: 7px;
+}
+
+.manage-account {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.manage-account:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.manage-account p {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-left: 7px;
+}
+
+.sign-out {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+}
+
+.sign-out:hover {
+    background-color: rgb(226, 199, 199);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sign-out p {
+    color: red;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 7px;
+    margin-bottom: 0px;
 }
 
 .phoditor-img {
+    min-width: 250px;
     width: 60%;
     align-self: center;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
 .titles {
@@ -257,4 +659,359 @@ header {
     text-align: center;
     font-size: 20px;
     background-color: #dadada;
+}
+
+.arrow-up-btn {
+    width: 50px;    
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgb(63, 0, 140);
+    border-radius: 50px;
+    border-style: none;
+    padding: 0px;
+    z-index: 100;
+}
+
+.arrow-up-btn:hover {
+    box-shadow: 0px 0px 10px 0px rgb(104, 104, 104);
+}
+
+.cookies {
+    position: relative;
+}
+
+.cookies-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 0px;
+    bottom: 10px;
+    left: 10px;
+    background-color: white;
+    border-color: #005eff;
+    border-style: solid;
+    border-radius: 50px;
+    z-index: 100;
+}
+
+.cookies:hover .cookies-btn {
+    box-shadow: 0px 0px 8px 0px rgb(104, 104, 104);
+}
+
+.cookies:hover .cookies-text {
+    display: inline-block;
+}
+
+.cookies-btn i {
+    margin-bottom: 15px;
+}
+
+.cookies-text {
+    display: none;
+    position: fixed;
+    width: 580px;
+    height: 200px;
+    padding: 20px;
+    bottom: 65px;
+    left: 10px;
+    border-radius: 15px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 0px 0px 25px 0px rgb(142, 142, 142);
+    z-index: 100;
+}
+
+.cookies-text p {
+    color: rgb(19, 19, 19);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cookies-text div {
+    position: absolute;
+    right: 35px;
+}
+
+.cookies-text div button:nth-of-type(1) {
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    color: #005eff;
+    font-weight: bolder;
+    background-color: white;
+    border-color: #005eff;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.cookies-text div button:nth-of-type(1):hover {
+    box-shadow: 0px 0px 8px 0px rgb(142, 142, 142);
+}
+
+.cookies-text div button:nth-of-type(2) {
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+    color: white;
+    background-color: #005eff;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.cookies-text div button:nth-of-type(2):hover {
+    background-color: #0048c3;
+    box-shadow: 0px 0px 8px 0px rgb(142, 142, 142);
+}
+
+.cookies-text div button:nth-of-type(3) {
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    color: white;
+    background-color: #005eff;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.cookies-text div button:nth-of-type(3):hover {
+    background-color: #0048c3;
+    box-shadow: 0px 0px 8px 0px rgb(142, 142, 142);
+}
+
+@media (max-width: 950px) {
+    header {
+        height: 55px;
+        margin-top: 0px;
+    }
+
+    .middle-items {
+        width: 330px;
+        height: 55px;
+    }
+
+    .profile-flex {
+        height: 55px;
+    }
+
+    .sign {
+        min-width: 155px;
+    }
+
+    .phoditor-logo {
+        width: 170px;
+    }
+
+    .vimg-logo img {
+        width: 180px;
+    }
+
+    .vimg-logo div {
+        font-size: 26px;
+    }
+
+    .vimg-logo div p {
+        font-size: 16px;
+    }
+
+    .dropdown-content {
+        margin-left: 70px;
+        left: -300px;
+    }
+    
+    .dropdown-flex {
+        width: 770px;
+        height: 210px;
+    }
+
+    .products-btn {
+        height: 55px;
+    }
+
+    .products-btn i {
+        font-size: 15px;
+    }
+
+    .products {
+        margin-left: 7px;
+    }
+
+    .support {
+        display: none;
+    }
+
+    .sign-up {
+        min-width: 83px;
+        font-size: 18px;
+    }
+
+    .login {
+        font-size: 18px;
+    }
+
+    .profile {
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .profile i {
+        margin-top: 1px;
+    }
+}
+
+@media (max-width: 820px) {
+    .middle-items {
+        width: 300px;
+    }
+
+    .dropdown-content {
+        left: -200px;
+    }
+    
+    .dropdown-flex {
+        flex-direction: column;
+        width: 380px;
+        height: auto;
+    }
+
+    .video-logo:hover {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .image-logo {
+        border-style: none;
+    }
+    
+    .image-logo:hover {
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .products-btn {
+        padding-right: 4px;
+        padding-left: 0px;
+    }
+
+    .about {
+        padding-right: 4px;
+        padding-left: 0px;
+    }
+
+    .contact {
+        padding-right: 4px;
+        padding-left: 0px;
+    }
+
+    .sign {
+        min-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .p-logo {
+        display: flex;
+    }
+
+    .phoditor-logo {
+        display: none;
+    }
+
+    .products {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 668px) {
+    .dropdown-content {
+        left: -100px;
+    }
+
+    .middle-items {
+        width: 400px;
+    }
+
+    .sign {
+        min-width: auto;
+    }
+    
+    .login {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .login {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .profile-content {
+        right: 10px;
+    }
+
+    .titles {
+        font-size: 30px;
+    }
+
+    .par {
+        font-size: 18px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    .login {
+        display: none;
+    }
+
+    .phoditor-img {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    
+    .titles {
+        font-size: 26px;
+    }
+
+    .par {
+        font-size: 16px;
+    }
+
+    .copyright {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .profile {
+        margin-left: 10px;
+    }
 }
