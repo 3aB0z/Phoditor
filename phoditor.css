@@ -1456,7 +1456,7 @@ header {
     width: 580px;
     height: 200px;
     padding: 20px;
-    bottom: 65px;
+    bottom: 60px;
     left: 10px;
     border-radius: 15px;
     background-color: rgb(245, 245, 245);
@@ -2430,7 +2430,7 @@ header {
     .cookies-text {
         width: 350px;
         height: 300px;
-        bottom: 50px;
+        bottom: 45px;
     }
     
     .cookies-text p {
