@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="Phoditor-images/P-logo.png">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/css/all.css">
+    <title>Phoditor</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-logo">
+            <a href="phoditor.html" class="p-logo"><img src="Phoditor-images/P-logo.png" alt="P-logo"></a>
+            <a href="phoditor.html" class="phoditor-logo"><img src="Phoditor-images/full-fit-phoditor-logo-no-bg.png" alt="phoditor-logo"></a>
+        </div>
+        <div class="middle-items">
+            <div class="menu">
+                <button class="menu-btn" id="menuBtn" onclick="showHideProducts(menuDiv,menuBtn,menuCaretDown)">
+                    <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px; margin-top: 0px;" id="menuCaretDown"></i>
+                    <p class="products">Menu</p>
+                </button>
+                <div class="menu-content" id="menuDiv">
+                    <div class="menu-content-flex">
+                        <button class="menu-content-button" onclick="showHideMenuProducts(menuProducts,menuProductsBtn,menuProductsCaretDown)" id="menuProductsBtn">
+                            <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px;" id="menuProductsCaretDown"></i>
+                            <p class="menu-products">Products</p>
+                        </button>
+                        <div class="menu-dropdown-content" id="menuProducts">
+                            <a href="#" class="menu-vimg-logo menu-image-logo">
+                                <img src="Phoditor-images/image-logo.webp" alt="image-logo">
+                                <div>Phoditor<p>Edit images, boost there quality & enchant them with effects for free</p></div>
+                            </a>
+                            <a href="" class="menu-vimg-logo menu-video-logo">
+                                <img src="Phoditor-images/video-logo.png" alt="video-logo">
+                                <div>Viditor<p>Edit videos with diffirent tools & enchant them with some effects for free</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-about">About</div>
+                    <div class="menu-contact">Contact</div>
+                    <div class="menu-support">Support</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="products-btn" onclick="showHideProducts(products,productsBtn,caretDown)" id="productsBtn">
+                    <i class="fa-solid fa-caret-down" style="color: #000000;" id="caretDown"></i>
+                    <p class="products">Products</p>
+                </button>
+                <div class="dropdown-content" id="products">
+                    <div class="dropdown-flex">
+                        <a href="#" class="vimg-logo image-logo">
+                            <img src="Phoditor-images/image-logo.webp" alt="image-logo">
+                            <div>Phoditor<p>Edit images, boost there quality & enchant them with effects for free</p></div>
+                        </a>
+                        <a href="" class="vimg-logo video-logo">
+                            <img src="Phoditor-images/video-logo.png" alt="video-logo">
+                            <div>Viditor<p>Edit videos with diffirent tools & enchant them with some effects for free</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="about.html"><button class="about">About</button></a>
+            <a href="contact.html"><button class="contact">Contact</button></a>
+            <a href="support.html"><button class="support">Support</button></a>
+        </div>
+        <div class="profile-flex">
+            <div class="sign">
+                <a href="phoditor-sign-up.html"><button class="sign-up">Sign Up</button></a>
+                <a href="phoditor-login.html"><button class="login">Login</button></a>
+            </div>
+            <div>
+                <button class="profile" title="Profile" onclick="showHideElement(profile,profileBtn)" id="profileBtn">
+                    <i class="fa-solid fa-circle-user" style="color: #1a003a; font-size: 45px;"></i>
+                </button>
+                <div class="profile-content" id="profile">
+                    <div class="user-items">
+                        <div class="user">
+                            <label for="upload" onclick="profileImgUpload()" onmouseenter="showProfileImageChange()" onmouseleave="hideProfileImageChange()" id="change-profile-img">
+                                <i class="fa-solid fa-pen-to-square fa-2xl" style="color: #ffffff;" id="change-profile-img-image"></i>
+                            </label>
+                            <input type="file">
+                            <img src="Phoditor-images/profile-img.jpg" alt="profile-image" id="profile-img">
+                        </div>
+                        <div class="user-text">
+                            <p>User</p>
+                            <p>user@gmail.com</p>
+                        </div>
+                    </div>
+                    <button class="manage-account">
+                        <i class="fa-solid fa-user-pen" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>Manage Account</p>
+                    </button>
+                    <button class="history">
+                        <i class="fa-solid fa-clock-rotate-left" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>History</p>
+                    </button>
+                    <button class="settings">
+                        <i class="fa-solid fa-gear" style="color: #8c95a7; font-size: 28px;"></i>
+                        <p>Settings</p>
+                    </button>
+                    <button class="sign-out">
+                        <i class="fa-solid fa-right-from-bracket" style="color: #ff0000; font-size: 25px; margin-top: 3px;"></i>
+                        <p>Sign out</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="bg-color"></div>
+
+    <div class="container">
+        <h1>Have Some Questions?</h1>
+        <p>Thank you for your interest in our services. Please fill out the form below or e-mail use at <span><a href="#">phoditor@gmail.com</a></span> and we will get back to you promptly reading your request.</p>
+        <div class="contact-flex">
+            <div class="contact-text-flex">
+                <div class="contact-text">
+                    <h4>Contact Us</h4>
+                    <div></div>
+                </div>
+                <form>
+                    <div class="name-phone-email">
+                        <input type="text" placeholder="Username*" required>
+                        <input type="text" placeholder="Phone*" required>
+                        <input type="text" placeholder="Email*" required>
+                    </div>
+                    <div class="message">
+                        <input type="text" placeholder="Message">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="information">
+                <div class="information-text-flex">
+                    <h3>Request a Call Back</h3>
+                    <p>You can also request a call back and we will answer as soon as we can.</p>
+                </div>
+                <div class="contact-phone-email">
+                    <div class="call">
+                        <div>
+                            <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                            <i class="fa-solid fa-phone" style="color: #ffffff; font-size: 18px; margin-top: 3px;"></i>
+                        </div>
+                        <p>+212-613655392</p>
+                    </div>
+                    <div class="call">
+                        <div>
+                            <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                            <i class="fa-solid fa-envelope" style="color: #ffffff; font-size: 18px; margin-top: 3px;"></i>
+                        </div>
+                        <p>phoditor@gmail.com</p>
+                    </div>
+                </div>
+                <div class="communities">
+                    <a href="https://www.facebook.com/profile.php?id=100078838295498">
+                        <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                        <i class="fa-brands fa-facebook-f" style="color: #ffffff; font-size: 18px; margin-top: 4px;"></i>
+                    </a>
+                    <a href="https://twitter.com/3aB0z">
+                        <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                        <i class="fa-brands fa-x-twitter" style="color: #ffffff; font-size: 18px; margin-top: 4px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdelaziz-loukhmi-9382a02a6">
+                        <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: #ffffff; font-size: 18px; margin-top: 4px;"></i>
+                    </a>
+                    <a href="https://www.instagram.com/3ab0z">
+                        <i class="fa-thin fa-circle" style="color: #ffffff; font-size: 34px;"></i>
+                        <i class="fa-brands fa-instagram" style="color: #ffffff; font-size: 18px; margin-top: 4px;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
