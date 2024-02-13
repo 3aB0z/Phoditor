@@ -644,6 +644,13 @@ header {
     z-index: 0;
 }
 
+.contact-support {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 500px;
+}
+
 .container {
     position: relative;
     display: flex;
@@ -654,6 +661,7 @@ header {
     height: 90vh;
     margin-top: 10vh;
     padding: 0px;
+    z-index: 2;
 }
 
 .container > h1:nth-of-type(1) {
@@ -775,7 +783,7 @@ header {
 .support-flex > div:nth-of-type(5) > input {
     width: 95%;
     height: 100%;
-    padding-left: 6px;
+    padding-left: 5px;
     align-self: center;
     border: 1px solid rgb(206, 206, 206);
     border-left: none;
@@ -809,6 +817,30 @@ header {
     color: white;
     font-size: 20px;
     margin-bottom: 2px;
+}
+
+.communities {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    flex-direction: column;
+    width: 70px;
+    height: 220px;
+    padding: 20px;
+    right: 30px;
+    bottom: 30px;
+    border-left: 1px solid white;
+}
+
+.communities > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.communities > a > i:nth-of-type(1) {
+    position: absolute;
 }
 
 
