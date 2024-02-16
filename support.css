@@ -730,8 +730,13 @@ header {
     background-color: rgba(201, 201, 201, 0.201);
 }
 
+.choose > button i {
+    transition: 0.2s;
+}
+
 .choose > button:hover i {
-    translate: 5px;
+    transform: translateX(7px);
+    transition: 0.2s;
 }
 
 .pays {
@@ -809,8 +814,13 @@ header {
     background: linear-gradient(to right, #5400a3, #2773ca);
 }
 
+.support-flex > button i {
+    transition: 0.2s;
+}
+
 .support-flex > button:hover i {
-    translate: 5px;
+    transform: translateX(7px);
+    transition: 0.2s;
 }
 
 .support-flex > button > p {

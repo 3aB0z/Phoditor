@@ -48,21 +48,7 @@ header {
     height: 32px;
 }
 
-.edit-tools div button img {
-    width: 32px;
-    height: 32px;
-}
-
-.image-tools {
-    display: flex;
-    justify-content: start;
-    flex-direction: row;
-    align-items: center;
-    width: auto;
-    height: 50px;
-}
-
-.image-tools div {
+.history {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -71,20 +57,15 @@ header {
     height: 50px;
 }
 
-.image-tools div:hover {
-    background-color: rgba(255, 255, 255, 0.138);
+.history:hover {
+    background-color: rgba(255, 255, 255, 0.111);
     cursor: pointer;
 }
 
-.image-tools div button {
+.history button {
     background: none;
     border-style: none;
     cursor: pointer;
-    width: 32px;
-    height: 32px;
-}
-
-.image-tools div button img {
     width: 32px;
     height: 32px;
 }
@@ -109,11 +90,6 @@ header {
 .download-btn:hover {
     background-color: rgba(255, 255, 255, 0.264);
     cursor: pointer;
-}
-
-.download-btn img {
-    width: 25px;
-    height: 25px;
 }
 
 .download-btn h5 {

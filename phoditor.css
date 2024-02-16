@@ -730,7 +730,7 @@ header {
     width: 100%;
     height: 320px;
     margin-bottom: 150px;
-    background: linear-gradient(to left, #9900cc 7%, #3399ff 100%);
+    background: linear-gradient(to left, #9900cc, #3399ff);
     z-index: 3;
 }
 
@@ -931,6 +931,12 @@ header {
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 150px;
+}
+
+.steps > img {
+    position: absolute;
+    top: 30px;
+    z-index: -1;
 }
 
 .steps div {
@@ -1218,19 +1224,80 @@ header {
     font-weight: bolder;
 }
 
+.sign-part {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 439px;
+    margin-bottom: 150px;
+    background-color: rgb(245, 245, 245);
+}
 
+.sign-part > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    height: 65%;
+}
 
+.sign-part > div > h1 {
+    color: rgb(83, 0, 185);
+    font-weight: bolder;
+    text-align: center;
+    line-height: 60px;
+    padding: 0px 8px;
+}
 
+.sign-part div > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+}
 
+.sign-part > div > div > a:nth-of-type(1) {
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 3px solid rgb(83, 0, 185);
+    background-color: rgb(83, 0, 185);
+}
 
+.sign-part > div > div > a:nth-of-type(1):hover {
+    background-color: rgb(63, 0, 140);
+    border-color: rgb(63, 0, 140);
+}
 
+.sign-part > div > div > a:nth-of-type(2) {
+    color: rgb(83, 0, 185);
+    font-size: 22px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 3px solid rgb(83, 0, 185);
+    background-color: white;
+}
+
+.sign-part > div > div > a:nth-of-type(2):hover {
+    color: rgb(63, 0, 140);
+    border-color: rgb(63, 0, 140);
+}
 
 
 
 
 
 .sides {
-    background: linear-gradient(to top left, #9900cc 7%, #3399ff 100%);
+    background: linear-gradient(to top left, #9900cc, #3399ff);
     width: 100%;
     height: 200px;
     display: flex;
@@ -1805,6 +1872,10 @@ header {
     .steps-title {
         margin-bottom: 0px;
     }
+
+    .sign-part > img {
+        width: 460px;
+    }
 }
 
 @media (max-width: 820px) {
@@ -1891,6 +1962,10 @@ header {
 
     .steps div p {
         font-size: 18px;
+    }
+
+    .sign-part > img {
+        width: 400px;
     }
 }
 
@@ -2043,6 +2118,19 @@ header {
 
     .stay-connected a i {
         font-size: 26px;
+    }
+
+    .sign-part > div {
+        width: 50%;
+    }
+
+    .sign-part > div > h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .sign-part > img {
+        width: 340px;
     }
 }
 
@@ -2206,6 +2294,21 @@ header {
     .cookies-text p {
         font-size: 16px;
         margin-top: 10px;
+    }
+
+    .sign-part {
+        flex-direction: column;
+        height: 650px;
+    }
+
+    .sign-part > div {
+        width: 70%;
+        min-width: 300px;
+        height: 240px;
+    }
+
+    .sign-part > img {
+        width: 80%;
     }
 }
 
@@ -2516,6 +2619,18 @@ header {
 
     .stay-connected a i {
         font-size: 20px;
+    }
+
+    .sign-part {
+        height: 320px;
+    }
+
+    .sign-part > div {
+        height: 75%;
+    }
+
+    .sign-part > img {
+        display: none;
     }
 }
 
