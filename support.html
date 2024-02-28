@@ -28,12 +28,14 @@
                     <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px; margin-top: 0px;" id="menuCaretDown"></i>
                     <p class="products">Menu</p>
                 </button>
+                <span></span>
                 <div class="menu-content" id="menuDiv">
                     <div class="menu-content-flex">
                         <button class="menu-content-button" onclick="showHideMenuProducts(menuProducts,menuProductsBtn,menuProductsCaretDown)" id="menuProductsBtn">
                             <i class="fa-solid fa-caret-down" style="color: #000000; font-size: 16px;" id="menuProductsCaretDown"></i>
                             <p class="menu-products">Products</p>
                         </button>
+                        <span></span>
                         <div class="menu-dropdown-content" id="menuProducts">
                             <a href="#" class="menu-vimg-logo menu-image-logo">
                                 <img src="Phoditor-images/image-logo.webp" alt="image-logo">
@@ -46,9 +48,9 @@
                             </a>
                         </div>
                     </div>
-                    <div class="menu-about">About</div>
-                    <div class="menu-contact">Contact</div>
-                    <div class="menu-support">Support</div>
+                    <a href="about.html" class="menu-about">About<span></span></a>
+                    <a href="contact.html" class="menu-contact">Contact<span></span></a>
+                    <a href="support.html" class="menu-support">Support<span></span></a>
                 </div>
             </div>
             <div class="dropdown">
@@ -56,6 +58,7 @@
                     <i class="fa-solid fa-caret-down" style="color: #000000;" id="caretDown"></i>
                     <p class="products">Products</p>
                 </button>
+                <span></span>
                 <div class="dropdown-content" id="products">
                     <div class="dropdown-flex">
                         <a href="#" class="vimg-logo image-logo">
@@ -70,9 +73,9 @@
                     </div>
                 </div>
             </div>
-            <a href="about.html"><button class="about">About</button></a>
-            <a href="contact.html"><button class="contact">Contact</button></a>
-            <a href="support.html"><button class="support">Support</button></a>
+            <a href="about.html" class="about">About<span></span></a>
+            <a href="contact.html" class="contact">Contact<span></span></a>
+            <a href="support.html" class="support">Support<span></span></a>
         </div>
         <div class="profile-flex">
             <div class="sign">
@@ -153,7 +156,7 @@
                 </div>
                 <div>
                     <label>$</label>
-                    <input type="number" placeholder="Costum amount" min="0.1"/>
+                    <input type="number" placeholder="Costum amount" min="0.01"/>
                 </div>
                 <button type="submit"><p>Next</p><i class="fa-regular fa-arrow-right" style="color: #ffffff; font-size: 18px; margin-top: 4px; margin-left: 12px;"></i></button>
             </div>

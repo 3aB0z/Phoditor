@@ -29,6 +29,24 @@ header {
     display: none;
 }
 
+.menu > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
 .menu-btn {
     display: flex;
     justify-content: center;
@@ -73,9 +91,29 @@ header {
 .menu-content-flex {
     position: relative;
     width: 100%;
+    z-index: 2;
+}
+
+.menu-content-flex > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-content-flex:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-about {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -83,7 +121,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-about > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-about:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-about:hover {
@@ -91,6 +148,7 @@ header {
 }
 
 .menu-contact {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -98,7 +156,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-contact > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-contact:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-contact:hover {
@@ -106,6 +183,7 @@ header {
 }
 
 .menu-support {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -113,7 +191,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-support > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-support:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-support:hover {
@@ -164,13 +261,6 @@ header {
     left: -63px;
     border-radius: 15px;
     border-style: none;
-}
-
-.menu-dropdown-flex {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 240px;
 }
 
 .menu-vimg-logo {
@@ -263,6 +353,24 @@ header {
     position: relative;
 }
 
+.dropdown > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.dropdown:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
 .products-btn {
     display: flex;
     align-items: center;
@@ -350,14 +458,32 @@ header {
     margin-left: 10px;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
 }
 
 .about {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.about > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.about:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .about:hover {
@@ -365,10 +491,29 @@ header {
 }
 
 .contact {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.contact > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.contact:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .contact:hover {
@@ -376,10 +521,29 @@ header {
 }
 
 .support {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.support > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.support:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .support:hover {
@@ -1434,6 +1598,7 @@ header {
     height: 40px;
     background-color: white;
     align-self: center;
+    outline: none;
 }
 
 .contact-us button {
@@ -2313,9 +2478,13 @@ header {
 }
 
 @media (max-width: 576px) {
+    .middle-items {
+        justify-content: flex-start;
+    }
+
     .menu {
         display: block;
-        margin-right: 40px;
+        margin-left: 30px;
     }
 
     .dropdown {
@@ -2552,6 +2721,10 @@ header {
 }
 
 @media (max-width: 425px) {
+    .menu {
+        margin-left: 20px;
+    }
+
     .login {
         display: none;
     }

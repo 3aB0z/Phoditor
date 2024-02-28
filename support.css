@@ -33,6 +33,24 @@ header {
     display: none;
 }
 
+.menu > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
 .menu-btn {
     display: flex;
     justify-content: center;
@@ -77,9 +95,29 @@ header {
 .menu-content-flex {
     position: relative;
     width: 100%;
+    z-index: 2;
+}
+
+.menu-content-flex > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-content-flex:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-about {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -87,7 +125,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-about > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-about:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-about:hover {
@@ -95,6 +152,7 @@ header {
 }
 
 .menu-contact {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -102,7 +160,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-contact > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-contact:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-contact:hover {
@@ -110,6 +187,7 @@ header {
 }
 
 .menu-support {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -117,7 +195,26 @@ header {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
+    color: black;
     text-align: center;
+}
+
+.menu-support > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.menu-support:hover > span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .menu-support:hover {
@@ -168,13 +265,6 @@ header {
     left: -63px;
     border-radius: 15px;
     border-style: none;
-}
-
-.menu-dropdown-flex {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    height: 240px;
 }
 
 .menu-vimg-logo {
@@ -267,6 +357,24 @@ header {
     position: relative;
 }
 
+.dropdown > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.dropdown:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
 .products-btn {
     display: flex;
     align-items: center;
@@ -354,14 +462,32 @@ header {
     margin-left: 10px;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
 }
 
 .about {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.about > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.about:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .about:hover {
@@ -369,10 +495,29 @@ header {
 }
 
 .contact {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.contact > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.contact:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .contact:hover {
@@ -380,10 +525,29 @@ header {
 }
 
 .support {
+    position: relative;
     color: black;
     margin-bottom: 0px;
     font-size: 22px;
-    align-self: center;
+    padding: 0px;
+}
+
+.support > span {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: rgb(83, 0, 185);
+    bottom: 0px;
+    left: 0px;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+.support:hover span {
+    width: 100%;
+    opacity: 1;
+    transition-duration: 0.3s;
 }
 
 .support:hover {
@@ -645,8 +809,9 @@ header {
 }
 
 .contact-support {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     width: 500px;
 }
@@ -674,6 +839,7 @@ header {
 
 .container > p:nth-of-type(1) {
     color: rgb(57, 57, 57);
+    min-width: 290px;
     width: 60%;
     font-size: 16px;
     font-family: Inter;
@@ -830,6 +996,7 @@ header {
 }
 
 .communities {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     align-self: flex-end;
@@ -837,7 +1004,7 @@ header {
     width: 70px;
     height: 220px;
     padding: 20px;
-    right: 30px;
+    right: -50px;
     bottom: 30px;
     border-left: 1px solid white;
 }
@@ -852,12 +1019,6 @@ header {
 .communities > a > i:nth-of-type(1) {
     position: absolute;
 }
-
-
-
-
-
-
 
 @media (max-width: 950px) {
     header {
@@ -959,10 +1120,6 @@ header {
         border-bottom-left-radius: 20px;
     }
 
-    .image-logo {
-        border-style: none;
-    }
-    
     .image-logo:hover {
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0px;
@@ -970,17 +1127,7 @@ header {
 
     .products-btn {
         padding-right: 4px;
-        padding-left: 0px;
-    }
-
-    .about {
-        padding-right: 4px;
-        padding-left: 0px;
-    }
-
-    .contact {
-        padding-right: 4px;
-        padding-left: 0px;
+        padding-left: 4px;
     }
 
     .sign {
@@ -1018,12 +1165,20 @@ header {
     .login {
         display: none;
     }
+
+    .communities {
+        right: -30px;
+    }
 }
 
 @media (max-width: 576px) {
+    .middle-items {
+        justify-content: flex-start;
+    }
+
     .menu {
         display: block;
-        margin-right: 40px;
+        margin-left: 30px;
     }
 
     .dropdown {
@@ -1050,24 +1205,66 @@ header {
     .titles {
         font-size: 30px;
     }
+
+    .bg-color {
+        height: 120vh;
+        clip-path: polygon(0 70%, 0 120vh, 100% 100%, 100% 28%);
+    }
+
+    .container {
+        height: 110vh;
+    }
+
+    .contact-support {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        height: 450px;
+    }
+
+    .communities {
+        position: relative;
+        justify-content: space-around;
+        flex-direction: row;
+        align-self: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 70%;
+        height: 60px;
+        border-top: 1px solid white;
+        border-left: none;
+    }
 }
 
 @media (max-width: 425px) {
+    .menu {
+        margin-left: 20px;
+    }
+
     .login {
         display: none;
     }
-
-    .phoditor-img {
-        margin-top: 80px;
-        margin-bottom: 40px;
+    
+    .choose > button {
+        display: none;
     }
     
-    .titles {
-        font-size: 26px;
+    .pays > button {
+        width: 28.5%;
     }
 
-    .par {
-        font-size: 16px;
+    .support-flex {
+        width: 100%;
+    }
+
+    .support-flex > div:nth-of-type(5) {
+        width: 95%;
+    }
+
+    .communities {
+        width: 80%;
     }
 }
 
