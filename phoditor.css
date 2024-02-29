@@ -67,10 +67,6 @@ header {
     background-color: rgb(206, 206, 206);
 }
 
-.menu:hover .menu-content {
-    display: inline-block;
-}
-
 .menu-btn i {
     margin-top: 15px;
 }
@@ -235,16 +231,6 @@ header {
     background-color: #dadada;
 }
 
-.menu-content-button:focus {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #dadada;
-}
-
-.menu-content-flex:hover .menu-dropdown-content {
-    display: block;
-}
-
 .menu-products {
     width: auto;
     margin-left: 5px;
@@ -382,10 +368,6 @@ header {
 
 .dropdown:hover .products-btn {
     background-color: rgb(206, 206, 206);
-}
-
-.dropdown:hover .dropdown-content {
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -613,10 +595,6 @@ header {
 
 .profile-flex div:nth-of-type(2):hover .profile {
     background-color: rgb(236, 236, 236);
-}
-
-.profile-flex div:nth-of-type(2):hover .profile-content {
-    display: inline-block;
 }
 
 .profile-content {

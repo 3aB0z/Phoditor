@@ -1,4 +1,4 @@
-/*//Show & hide element with animation
+//Show & hide element with animation
 let elementSwitcher = true;
 function showHideElement(elementDisplayed,btnClicked) {
     if (elementSwitcher) {
@@ -105,4 +105,4 @@ function showHideCookies(elementDisplayed) {
         elementDisplayed.style.display = 'none';
         cookiesSwitcher = true;
     }
-}*/
+}
