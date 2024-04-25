@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="editor.css">
     <link rel="stylesheet" href="../fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="icon" href="../Phoditor-images/P-logo.png">
     <title>Phoditor Editor</title>
-    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome" href="/css/app-wa-612dd696ed96d6777d290343ca9cef9d.css?vsn=d">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
@@ -22,12 +22,6 @@
             </div>
             <div title="Palette">
                 <button><i class="fa-solid fa-palette fa-2xl" style="color: #ffffff;"></i></button>
-            </div>
-            <div title="Shapes">
-                <button><i class="fa-solid fa-shapes fa-2xl" style="color: #ffffff;"></i></button>
-            </div>
-            <div title="Text">
-                <button><i class="fa-solid fa-text fa-2xl" style="color: #ffffff;"></i></button>
             </div>
             <div title="Write">
                 <button><i class="fa-solid fa-pencil fa-2xl" style="color: #ffffff;"></i></button>
@@ -66,18 +60,92 @@
                 <button><i class="fa-solid fa-share fa-2xl" style="color: #ffffff;"></i></button>
             </div>
         </div>
-        <div class="history" title="History">
+        <div class="history-item" title="History">
             <button><i class="fa-solid fa-clock-rotate-left fa-2xl" style="color: #ffffff;"></i></button>
         </div>
-        <button class="download-btn">
-            <i class="fa-solid fa-download fa-lg" style="color: #ffffff;"></i>
-            <h5>Download</h5>
-        </button>
+        <div class="up-down-load">
+            <button class="download-btn">
+                <i class="fa-solid fa-download fa-lg" style="color: #ffffff;"></i>
+                <h5>Download</h5>
+            </button>
+            <label for="upload-btn" class="upload-btn">
+                <i class="fa-solid fa-upload fa-lg" style="color: #ffffff;"></i>
+                <h5>Upload</h5>
+            </label>
+            <input type="file" id="upload-btn">
+        </div>
+        <div class="profile-flex">
+            <button class="profile" title="Profile" onclick="showHideElement(profile,profileBtn)" id="profileBtn">
+                <img src="images/profile-img.jpg" alt="profile-image" id="profile-image">
+            </button>
+            <div class="profile-content" id="profile">
+                <div class="user-items">
+                    <div class="user">
+                        <label for="profile-upload" onmouseenter="showProfileImageChange()" onmouseleave="hideProfileImageChange()" id="change-profile-img">
+                            <i class="fa-solid fa-pen-to-square fa-2xl" style="color: #ffffff;" id="change-profile-img-image"></i>
+                        </label>
+                        <input type="file" id="profile-upload">
+                        <img src="images/profile-img.jpg" alt="profile-image" id="profile-img">
+                    </div>
+                    <div class="user-text">
+                        <p>User</p>
+                        <p>user@gmail.com</p>
+                    </div>
+                </div>
+                <button class="manage-account">
+                    <i class="fa-solid fa-user-pen" style="color: #8c95a7; font-size: 28px;"></i>
+                    <p>Manage Account</p>
+                </button>
+                <button class="history">
+                    <i class="fa-solid fa-clock-rotate-left" style="color: #8c95a7; font-size: 28px;"></i>
+                    <p>History</p>
+                </button>
+                <button class="settings">
+                    <i class="fa-solid fa-gear" style="color: #8c95a7; font-size: 28px;"></i>
+                    <p>Settings</p>
+                </button>
+                <button class="sign-out">
+                    <i class="fa-solid fa-right-from-bracket" style="color: #ff0000; font-size: 25px; margin-top: 3px;"></i>
+                    <p>Sign out</p>
+                </button>
+            </div>
+        </div>
     </header>
-    <div class="image-container">
-        <img src="images/Infernal swain 3840x2160.jpg" alt="user-image">
-    </div>
 
+    <div class="menu-image-container">
+        <div class="menu">
+            <button type="button" class="elements">
+                <i class="fa-solid fa-shapes fa-2xl" style="color: #ffffff;"></i>
+                <p>Elements</p>
+            </button>
+            <button type="button" class="elements">
+                <i class="fa-solid fa-text fa-2xl" style="color: #ffffff;"></i>
+                <p>Text</p>
+            </button>
+            <button type="button" class="switch-colors">
+                <i class="fa-solid fa-shuffle fa-2xl" style="color: #ffffff;"></i>
+                <p>Switch Colors</p>
+            </button>
+            <button type="button" class="cute">
+                <i class="fa-solid fa-scissors fa-2xl" style="color: #ffffff;"></i>
+                <p>Cute</p>
+            </button>
+            <button type="button" class="add-effects">
+                <i class="fa-solid fa-wand-magic-sparkles fa-2xl" style="color: #ffffff;"></i>
+                <p>Add Effects</p>
+            </button>
+            <button type="button" class="crop">
+                <i class="fa-solid fa-crop-simple fa-2xl" style="color: #ffffff;"></i>
+                <p>Crop</p>
+            </button>
+            <div class="draw"></div>
+            <div class="effects"></div>
+            <div class="projects"></div>
+        </div>
+        <div class="image-container">
+            <img src="images/Infernal swain 3840x2160.jpg" alt="user-image" id="new-img">
+        </div>
+    </div>
 
 
     <script src="editor.js"></script>
