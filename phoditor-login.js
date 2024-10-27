@@ -1,10 +1,10 @@
-users = ['loukhmi@gmail.com', 'loukhmi']
+// users = ['loukhmi@gmail.com', 'loukhmi']
 
-let email = document.getElementById(stemail)
+// let email = document.getElementById(stemail)
 
-let password = document.getElementById(stpassword)
+// let password = document.getElementById(stpassword)
 
-if (email == users[0] && password == users[1]) {
-    alert('Logged Successfully!')
-}
+// if (email == users[0] && password == users[1]) {
+//     alert('Logged Successfully!')
+// }
 

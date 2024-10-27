@@ -15,26 +15,36 @@
         <img src="Phoditor-images/P-logo.png" alt="P-logo">
     </a>
 
-    <form class="sing-part" action="">
+    <form class="sing-part">
         <div class="phoditor-text">Sign Up</div>
         <div class="flex-name">
-            <label class="name" for="username">Username :</label>
-            <input class="input" type="text" id="username" required>
+            <label class="username" for="username">Username :</label>
+            <input class="username-input" type="text" id="username" required>
+            <span id="username-info">Username must be between 3 and 20 characters.</span>
+            <span id="accepted-value">Username accepted!</span>
+            <span id="empty-value">You enter an empty value!</span>
+            <span id="short-value">Username is too short!</span>
+            <span id="long-value">Username is too long!</span>
         </div>
         <div class="flex-name">
-            <label class="name" for="email">Email :</label>
-            <input class="input" type="email" id="email" required>
+            <label class="email" for="email">Email :</label>
+            <input class="email-input" type="email" id="email" required>
+            <span id="invalid-email">Invalid email!</span>
+            <span id="valid-email">Email is valid!</span>
         </div>
         <div class="flex-name">
-            <label class="name" for="password">Password :</label>
-            <input class="input" type="password" id="password" required>
+            <label class="password" for="password">Password :</label>
+            <input class="password-input" type="password" id="password" required>
+            <span id="password-info">Password must be more than 8 characters and countain symbols and numbers.</span>
+            <span id="invalid-password">Invalid password!</span>
+            <span id="valid-password">Password is valid!</span>
         </div>
         <div class="flex-terms">
             <input type="checkbox" checked required>
             <span>Agree and accept <a href="about.html" class="terms">terms and conditions</a> of this community.</span>
         </div>
         <div class="submit-flex">
-            <a href="phoditor-login.html"><button class="submit-btn" type="submit">Submit</button></a>
+            <a href="phoditor-login.html"><button class="submit-btn" type="submit" id="submit">Submit</button></a>
         </div>
         <p>Already have an Account? <a href="phoditor-login.html">Login here</a></p>
     </form>

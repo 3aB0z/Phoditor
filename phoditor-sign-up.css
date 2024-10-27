@@ -7,16 +7,23 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background: linear-gradient(to top right, #ffccff 0%, #ccccff 100%);
     width: 100%;
     height: 100vh;
 }
 
+input:focus {
+    outline: none;
+}
+
 .phoditor-logo {
+    position: absolute;
     display: block;
-    margin-top: 10px;
-    margin-left: 10px;
+    top: 10px;
+    left: 10px;
     width: 240px;
     z-index: 3;
 }
@@ -32,11 +39,9 @@ body {
 }
 
 .sing-part {
-    position: absolute;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    margin-top: 25px;
     width: 400px;
     height: 570px;
     align-self: center;
@@ -61,7 +66,7 @@ body {
     align-items: center;
 }
 
-.name {
+.username {
     display: flex;
     text-align: center;
     align-items: center;
@@ -72,7 +77,7 @@ body {
     color: black;
 }
 
-.input {
+.username-input {
     width: 60%;
     height: 35px;
     padding: 8px;
@@ -82,6 +87,90 @@ body {
     border-radius: 5px;
     border-width: 2px;
     border-color: rgb(67, 0, 148);
+}
+
+#username-info, #password-info {
+    color: rgb(0, 70, 132);
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    width: 70%;
+    height: 20px;
+}
+
+#accepted-value, #valid-email, #valid-password {
+    display: none;
+    margin-top: 3px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(0, 188, 69);
+    height: 20px;
+}
+
+#empty-value, #short-value, #long-value, #invalid-email, #invalid-password {
+    display: none;
+    margin-top: 3px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(255, 0, 76);
+    height: 20px;
+}
+
+.email {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 59%;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.email-input {
+    width: 60%;
+    height: 35px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgb(248, 248, 248);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(67, 0, 148);
+}
+
+.password {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 59%;
+    margin-bottom: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.password-input {
+    width: 60%;
+    height: 35px;
+    padding: 8px;
+    font-size: 18px;
+    background-color: rgb(248, 248, 248);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgb(67, 0, 148);
+}
+
+#password-info {
+    color: rgb(0, 70, 132);
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    width: 70%;
+    height: 40px;
 }
 
 .flex-terms {
